@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>Latihan Perulangan</title></head>
+<body>
+  <h2>Daftar Mata Kuliah</h2>
+  <ul id="daftar-matkul">
+    <!-- Konten akan diisi oleh JavaScript -->
+  </ul>
+
+  <script>
+    var matkul = ["hendery", "Mark", "Haechan", "Jaehyun"];
+    var daftarElement = document.getElementById("daftar-matkul");
+    var htmlString = "";
+
+    for (let i = 0; i < matkul.length; i++) {
+      htmlString += "<li>" + matkul[i] + "</li>";
+    }
+
+    daftarElement.innerHTML = htmlString;
+  </script>
+</body>
+</html>
